@@ -7,13 +7,13 @@ app.use(express.json())
 const todoDatabase = []
 
 /* Adds an item to the database */
-app.post('/todo', authenticateUser, (req, res) => {
+app.post('/todo', (req, res) => {
     userTodoList.push(req.body.item)
     res.status(201).end()
 })
 
 /* Gets all items from the database */
-app.get('/todo', authenticateUser, (req, res) => {
+app.get('/todo', (req, res) => {
     res.send(todoDatabase)
 })
 
