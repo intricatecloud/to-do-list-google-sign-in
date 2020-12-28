@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.app-container header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5em 0;
+  margin-bottom: 1em;
+}
+
+.sign-in-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.sign-out-container {
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+
+.input-container > input {
+  flex-grow: 2;
+}
+
+.input-container > div {
+  flex-grow: 1;
+}
+
+#login-button {
+  margin-top: 1em;
+}
+
+button.primary {
+  background-color: blue;
+  color: white;
+}
+
+button:disabled {
+  background-color: grey;
+  color: white;
+}
